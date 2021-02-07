@@ -1,6 +1,18 @@
+import "./styles/reset.css";
+import "./styles/index.css";
+
+import { a } from "~utils/vDom.js";
+
 window.addEventListener("DOMContentLoaded", () => {
   const app = document.getElementById("app");
-  const div = document.createElement("div");
-  div.innerText += "Hello World";
-  app.appendChild(div);
+
+  app.appendChild(
+    a(
+      {
+        href: "/",
+        className: "test",
+      },
+      "hello"
+    )
+  );
 });

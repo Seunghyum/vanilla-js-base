@@ -14,6 +14,8 @@ module.exports = {
     extensions: ["*", ".js"],
     alias: {
       "~src": join(__dirname, "../src"),
+      "~utils": join(__dirname, "../src/utils"),
+      "~components": join(__dirname, "../src/components"),
     },
   },
   module: {
