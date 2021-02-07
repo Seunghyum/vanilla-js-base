@@ -1,18 +1,8 @@
 import "./styles/reset.css";
 import "./styles/index.css";
 
-import { a } from "~utils/vDom.js";
+import { initRoute } from "~src/router";
 
 window.addEventListener("DOMContentLoaded", () => {
-  const app = document.getElementById("app");
-
-  app.appendChild(
-    a(
-      {
-        href: "/",
-        className: "test",
-      },
-      "hello"
-    )
-  );
+  initRoute();
 });
